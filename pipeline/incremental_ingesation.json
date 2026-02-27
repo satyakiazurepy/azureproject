@@ -117,7 +117,14 @@
 					{
 						"name": "current"
 					}
-				]
+				],
+				"typeProperties": {
+					"variableName": "current",
+					"value": {
+						"value": "@utcNow()",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
@@ -128,6 +135,11 @@
 				"type": "String"
 			},
 			"cdc_col": {
+				"type": "String"
+			}
+		},
+		"variables": {
+			"current": {
 				"type": "String"
 			}
 		},
